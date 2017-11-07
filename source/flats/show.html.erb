@@ -1,0 +1,16 @@
+<%= flat = data.flats[owner] %>
+
+<div class="flat-banner" style="background-image: url(<%= image_path "images/#{owner}.jpg" %> );">
+</div>
+
+<div class="contact-container">
+  <div class="about-card">
+    <%= image_tag "https://kitt.lewagon.com/placeholder/users/#{owner}", class: "img-circle avatar" %>
+    <p class="flat-owner"><%= flat.name %></p>
+    <h1 class="flat-description"><%= flat.description %></h1>
+    <p class="flat-city"><%= flat.city_name %></p>
+  </div>
+<!-- <form action="">
+
+</form> -->
+</div>

@@ -25,43 +25,23 @@ title: Le Wagon - Middleman
       </form>
     </div>
   </div>
-
-  <div class="container">
+<div class="wrapper-white">
+  <div class="container" id="home-flats">
     <h2 class="text-center">Recent flats</h2>
     <div class="row">
+      <% data.flats.each do |owner, flat| %>
       <div class="col-xs-12 col-sm-4">
-        <div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url(<%= image_path "images/red-house.jpg" %>);">
-          <div class="card-category">Pacific Northwest</div>
+        <div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('images/<%= owner %>.jpg');">
+          <div class="card-category"> <%= flat.city_name %> </div>
           <div class="card-description">
-            <h2>Portland, Oregon</h2>
-            <p>Trendy flat in NE Portland</p>
+            <h2> <%= flat.name %> </h2>
+            <p> <%= flat.description %> </p>
           </div>
-          <img class="card-user" src="https://kitt.lewagon.com/placeholder/users/tgenaitay">
-          <a class="card-link" href="#" ></a>
+          <img class="card-user" src="https://kitt.lewagon.com/placeholder/users/<%= owner %>">
+          <%= link_to "", "/flats/#{owner}.html", class: "card-link" %>
         </div>
       </div>
-      <div class="col-xs-12 col-sm-4">
-       <div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url( <%= image_path "images/yellow-house.jpg" %>);">
-        <div class="card-category">Pacific Northwest</div>
-        <div class="card-description">
-          <h2>Seattle, Washington</h2>
-          <p>Charming house near Pike's Place</p>
-        </div>
-        <img class="card-user" src="https://kitt.lewagon.com/placeholder/users/tgenaitay">
-        <a class="card-link" href="#" ></a>
-      </div>
-    </div>
-    <div class="col-xs-12 col-sm-4">
-      <div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url( <%= image_path "images/pink-house.jpg" %>);">
-        <div class="card-category">Pacific Northwest</div>
-        <div class="card-description">
-          <h2>Portland, Oregon</h2>
-          <p>Cute flat downtown</p>
-        </div>
-        <img class="card-user" src="https://kitt.lewagon.com/placeholder/users/tgenaitay">
-        <a class="card-link" href="#" ></a>
-      </div>
+      <% end %>
     </div>
   </div>
-</div>
-</div>
+  </div>

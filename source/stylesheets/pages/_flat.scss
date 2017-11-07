@@ -1,0 +1,22 @@
+.card-container {
+  width: 100%;
+  background-color: white;
+}
+
+.about-card{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  text-align: center;
+  position: relative;
+  p{
+    font-size: 14px;
+    font-weight: lighter;
+    color: rgba(0,0,0,0.6);
+  }
+  h1{
+    font-size: 20px;
+    font-weight: bold;
+    color: rgba(0,0,0,0.6);
+  }
+}

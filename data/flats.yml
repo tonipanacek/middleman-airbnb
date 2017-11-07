@@ -1,0 +1,24 @@
+rjogrady21:
+  name: "Rich's home"
+  description: "Quirky flat in the trendy neighborhood of NE Portland"
+  city_name: "Portland, Oregon"
+  city_slug: "portland"
+  max_guests: 4
+  wifi: true
+  rating: 4
+tonipanacek:
+  name: "Toni's home"
+  description: "Charming home in Seattle, Washington"
+  city_name: "Seattle, Washington"
+  city_slug: "seattle"
+  max_guests: 7
+  wifi: true
+  rating: 5
+vnnnlc:
+  name: "Angelica's home"
+  description: "Lovely flat in downtown Portland"
+  city_name: "Portland, Oregon"
+  city_slug: "portland"
+  max_guests: 3
+  wifi: true
+  rating: 4
